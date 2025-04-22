@@ -1,60 +1,339 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Santri Digital</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Komunitas SantriDigital - Sumber artikel keislaman, aplikasi Islami, dan produk digital untuk santri modern">
+    <title>SantriDigital - Komunitas Santri Modern</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Santri Digital</h1>
-      <nav>
-        <a href="#tentang">Tentang</a>
-        <a href="#layanan">Layanan</a>
-        <a href="#kontak">Kontak</a>
-      </nav>
-    </div>
-  </header>
+    <!-- Navigasi -->
+    <header class="sticky-nav">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>Santri<span>Digital</span></h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#artikel">Artikel</a></li>
+                    <li><a href="#premium">Premium</a></li>
+                    <li><a href="#gratis">Gratis</a></li>
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><button class="btn-login">Login</button></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Menjadi Santri yang Melek Digital</h2>
-      <p>Menyediakan konten dan pelatihan digital untuk santri dan masyarakat pesantren.</p>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Selamat Datang di SantriDigital</h2>
+            <p>Platform digital untuk santri modern dengan konten Islami berkualitas</p>
+            <div class="hero-buttons">
+                <a href="#gratis" class="btn-primary">Akses Gratis</a>
+                <a href="#premium" class="btn-secondary">Premium</a>
+            </div>
+        </div>
+    </section>
 
-  <section id="tentang" class="section">
-    <div class="container">
-      <h3>Tentang Kami</h3>
-      <p>Santri Digital adalah gerakan edukasi teknologi untuk kalangan pesantren. Kami membekali santri dengan keterampilan digital untuk masa depan.</p>
-    </div>
-  </section>
+    <!-- Blok 1: Artikel Agama -->
+    <section id="artikel" class="block artikel-block">
+        <div class="container">
+            <h2 class="section-title">Artikel Keislaman</h2>
+            <p class="section-subtitle">Temukan berbagai artikel bermanfaat untuk menambah wawasan keislaman Anda</p>
+            
+            <div class="artikel-grid">
+                <article class="artikel-card">
+                    <div class="artikel-image">
+                        <img src="https://via.placeholder.com/300x200?text=Fiqih" alt="Fiqih Kontemporer">
+                    </div>
+                    <div class="artikel-content">
+                        <span class="kategori">Fiqih</span>
+                        <h3>Fiqih Kontemporer: Sholat di Luar Angkasa</h3>
+                        <p>Bagaimana hukum sholat ketika berada di stasiun luar angkasa? Temukan jawabannya dalam artikel ini...</p>
+                        <a href="#" class="btn-read">Baca Selengkapnya</a>
+                    </div>
+                </article>
 
-  <section id="layanan" class="section">
-    <div class="container">
-      <h3>Layanan</h3>
-      <ul>
-        <li>Kelas Website Dasar</li>
-        <li>Pelatihan Desain Grafis</li>
-        <li>Workshop Konten Digital</li>
-      </ul>
-    </div>
-  </section>
+                <article class="artikel-card">
+                    <div class="artikel-image">
+                        <img src="https://via.placeholder.com/300x200?text=Tafsir" alt="Tafsir Surah Al-Kahfi">
+                    </div>
+                    <div class="artikel-content">
+                        <span class="kategori">Tafsir</span>
+                        <h3>Tafsir Surah Al-Kahfi di Era Digital</h3>
+                        <p>Mengungkap relevansi Surah Al-Kahfi dengan fenomena dunia digital modern yang kita hadapi saat ini...</p>
+                        <a href="#" class="btn-read">Baca Selengkapnya</a>
+                    </div>
+                </article>
 
-  <section id="kontak" class="section">
-    <div class="container">
-      <h3>Kontak</h3>
-      <p>Email: info@santridigital.net</p>
-      <p>Instagram: @santridigital</p>
-    </div>
-  </section>
+                <article class="artikel-card">
+                    <div class="artikel-image">
+                        <img src="https://via.placeholder.com/300x200?text=Sejarah" alt="Sejarah Islam Nusantara">
+                    </div>
+                    <div class="artikel-content">
+                        <span class="kategori">Sejarah</span>
+                        <h3>Penyebaran Islam di Nusantara: Fakta dan Mitos</h3>
+                        <p>Mengupas tuntas proses islamisasi di Indonesia berdasarkan bukti-bukti sejarah yang valid...</p>
+                        <a href="#" class="btn-read">Baca Selengkapnya</a>
+                    </div>
+                </article>
+            </div>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Santri Digital. Dibuat dengan cinta.</p>
+            <div class="text-center">
+                <a href="#" class="btn-primary">Lihat Semua Artikel</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blok 2: Aplikasi Berbayar -->
+    <section id="premium" class="block premium-block">
+        <div class="container">
+            <h2 class="section-title">Aplikasi Premium</h2>
+            <p class="section-subtitle">Akses konten eksklusif dan fitur lengkap dengan berlangganan aplikasi premium kami</p>
+            
+            <div class="premium-grid">
+                <div class="premium-card">
+                    <div class="premium-icon">
+                        <img src="https://via.placeholder.com/100?text=Quran" alt="Tafsir Digital">
+                    </div>
+                    <h3>Tafsir Digital Pro</h3>
+                    <ul class="feature-list">
+                        <li>30+ Kitab Tafsir Terpercaya</li>
+                        <li>Pencarian Ayat Canggih</li>
+                        <li>Analisis Bahasa Arab</li>
+                        <li>Mode Offline</li>
+                    </ul>
+                    <div class="price">Rp 49.000<span>/bulan</span></div>
+                    <button class="btn-login btn-premium">Login untuk Berlangganan</button>
+                </div>
+
+                <div class="premium-card featured">
+                    <div class="premium-icon">
+                        <img src="https://via.placeholder.com/100?text=Fiqih" alt="Fiqih Digital">
+                    </div>
+                    <h3>Fiqih Digital Pro</h3>
+                    <ul class="feature-list">
+                        <li>Panduan Fiqih 4 Mazhab</li>
+                        <li>Konsultasi dengan Ustadz</li>
+                        <li>Video Pembelajaran</li>
+                        <li>Update Konten Rutin</li>
+                    </ul>
+                    <div class="price">Rp 79.000<span>/bulan</span></div>
+                    <button class="btn-login btn-premium">Login untuk Berlangganan</button>
+                </div>
+
+                <div class="premium-card">
+                    <div class="premium-icon">
+                        <img src="https://via.placeholder.com/100?text=Hadits" alt="Hadits Digital">
+                    </div>
+                    <h3>Hadits Digital Pro</h3>
+                    <ul class="feature-list">
+                        <li>9 Kitab Hadits Pokok</li>
+                        <li>Verifikasi Sanad</li>
+                        <li>Klasifikasi Derajat Hadits</li>
+                        <li>Syarah Lengkap</li>
+                    </ul>
+                    <div class="price">Rp 59.000<span>/bulan</span></div>
+                    <button class="btn-login btn-premium">Login untuk Berlangganan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blok 3: Aplikasi Gratis -->
+    <section id="gratis" class="block gratis-block">
+        <div class="container">
+            <h2 class="section-title">Aplikasi Gratis</h2>
+            <p class="section-subtitle">Nikmati berbagai aplikasi Islami gratis tanpa perlu login</p>
+            
+            <div class="gratis-grid">
+                <div class="gratis-card">
+                    <div class="gratis-icon">
+                        <img src="https://via.placeholder.com/100?text=Doa" alt="Kumpulan Doa">
+                    </div>
+                    <h3>Kumpulan Doa Harian</h3>
+                    <p>Aplikasi berisi doa-doa pilihan dari Rasulullah untuk aktivitas sehari-hari</p>
+                    <a href="#" class="btn-primary">Akses Sekarang</a>
+                </div>
+
+                <div class="gratis-card">
+                    <div class="gratis-icon">
+                        <img src="https://via.placeholder.com/100?text=Jadwal" alt="Jadwal Sholat">
+                    </div>
+                    <h3>Jadwal Sholat Digital</h3>
+                    <p>Jadwal sholat akurat untuk seluruh kota di Indonesia dengan notifikasi adzan</p>
+                    <a href="#" class="btn-primary">Akses Sekarang</a>
+                </div>
+
+                <div class="gratis-card">
+                    <div class="gratis-icon">
+                        <img src="https://via.placeholder.com/100?text=Hijriah" alt="Kalender Hijriah">
+                    </div>
+                    <h3>Kalender Hijriah</h3>
+                    <p>Konversi tanggal Masehi-Hijriah dan informasi hari besar Islam</p>
+                    <a href="#" class="btn-primary">Akses Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blok 4: Profil -->
+    <section id="profil" class="block profil-block">
+        <div class="container">
+            <h2 class="section-title">Tentang Kami</h2>
+            <p class="section-subtitle">Kenali lebih dekat komunitas SantriDigital</p>
+            
+            <div class="profil-content">
+                <div class="profil-text">
+                    <h3>Visi & Misi</h3>
+                    <p>SantriDigital hadir sebagai wadah bagi santri modern untuk mengakses konten keislaman berkualitas dengan pendekatan digital yang segar dan mudah dipahami.</p>
+                    <p>Kami berkomitmen menyajikan konten yang autentik, valid, dan relevan dengan perkembangan zaman tanpa meninggalkan prinsip-prinsip dasar agama.</p>
+                    
+                    <h3>Tim Kami</h3>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <img src="https://via.placeholder.com/150?text=Ustadz" alt="Ustadz Ahmad">
+                            <h4>Ustadz Ahmad, Lc.</h4>
+                            <p>Pakar Fiqih Kontemporer</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="https://via.placeholder.com/150?text=Developer" alt="Developer">
+                            <h4>M. Faisal</h4>
+                            <p>Lead Developer</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="https://via.placeholder.com/150?text=Content" alt="Content Writer">
+                            <h4>Sarah Nurhaliza</h4>
+                            <p>Content Writer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profil-image">
+                    <img src="https://via.placeholder.com/500x400?text=SantriDigital" alt="Tim SantriDigital">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blok 5: Produk Digital -->
+    <section id="produk" class="block produk-block">
+        <div class="container">
+            <h2 class="section-title">Produk Digital</h2>
+            <p class="section-subtitle">Temukan produk digital Islami berkualitas dari SantriDigital</p>
+            
+            <div class="produk-grid">
+                <div class="produk-card">
+                    <div class="produk-image">
+                        <img src="https://via.placeholder.com/300x200?text=E-Book" alt="E-Book Fiqih Digital">
+                    </div>
+                    <div class="produk-content">
+                        <h3>E-Book Fiqih Digital</h3>
+                        <p>Panduan lengkap fiqih sehari-hari dalam format digital dengan ilustrasi interaktif</p>
+                        <div class="produk-footer">
+                            <div class="price">Rp 75.000</div>
+                            <button class="btn-beli">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produk-card">
+                    <div class="produk-image">
+                        <img src="https://via.placeholder.com/300x200?text=Video" alt="Video Kursus">
+                    </div>
+                    <div class="produk-content">
+                        <h3>Video Kursus Bahasa Arab</h3>
+                        <p>50+ video pembelajaran bahasa Arab sistematis dari dasar hingga lanjutan</p>
+                        <div class="produk-footer">
+                            <div class="price">Rp 120.000</div>
+                            <button class="btn-beli">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produk-card">
+                    <div class="produk-image">
+                        <img src="https://via.placeholder.com/300x200?text=Audio" alt="Audio Murattal">
+                    </div>
+                    <div class="produk-content">
+                        <h3>Audio Murattal Premium</h3>
+                        <p>Koleksi murattal seluruh Al-Quran oleh Qari ternama dengan kualitas studio</p>
+                        <div class="produk-footer">
+                            <div class="price">Rp 85.000</div>
+                            <button class="btn-beli">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login SantriDigital</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="email@anda.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password Anda" required>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+                <p class="register-text">Belum punya akun? <a href="#">Daftar disini</a></p>
+            </form>
+        </div>
     </div>
-  </footer>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>SantriDigital</h3>
+                    <p>Platform digital untuk santri modern dengan konten Islami berkualitas dan terpercaya.</p>
+                    <div class="social-links">
+                        <a href="#"><img src="https://via.placeholder.com/30?text=FB" alt="Facebook"></a>
+                        <a href="#"><img src="https://via.placeholder.com/30?text=IG" alt="Instagram"></a>
+                        <a href="#"><img src="https://via.placeholder.com/30?text=YT" alt="YouTube"></a>
+                        <a href="#"><img src="https://via.placeholder.com/30?text=TW" alt="Twitter"></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigasi</h3>
+                    <ul>
+                        <li><a href="#artikel">Artikel</a></li>
+                        <li><a href="#premium">Aplikasi Premium</a></li>
+                        <li><a href="#gratis">Aplikasi Gratis</a></li>
+                        <li><a href="#profil">Profil</a></li>
+                        <li><a href="#produk">Produk Digital</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Kontak Kami</h3>
+                    <p><strong>Email:</strong> info@santridigital.id</p>
+                    <p><strong>Telepon:</strong> +62 123 4567 890</p>
+                    <p><strong>Alamat:</strong> Jl. Pesantren Digital No. 123, Jakarta</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SantriDigital. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -986,13 +986,40 @@
         // Prevent inspect element
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
+            return false;
         });
         
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.shiftKey && e.key === 'J') || (e.ctrlKey && e.key === 'U')) {
+            // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+            if (e.key === 'F12' || 
+                (e.ctrlKey && e.shiftKey && e.key === 'I') || 
+                (e.ctrlKey && e.shiftKey && e.key === 'J') || 
+                (e.ctrlKey && e.key === 'U') ||
+                (e.ctrlKey && e.key === 'S') ||
+                (e.ctrlKey && e.key === 'C') ||
+                (e.ctrlKey && e.key === 'X') ||
+                (e.ctrlKey && e.key === 'V') ||
+                (e.ctrlKey && e.key === 'A')) {
                 e.preventDefault();
+                return false;
             }
         });
+
+        // Disable text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Disable drag and drop
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Disable opening new window
+        window.open = function(){};
+        document.oncontextmenu = function(){return false;};
 
         // API Configuration
         const API_CONFIG = {
